@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Backlog</title>
+  </head>
+  <body>
+
+    <main class="main">
+
+      <div class="content">
+      <div class="register">
+
+        <h1 class="titles">Nova tarefa</h1>
+
+        <form action="" class="form" id="form">
+
+          <div class="input_titulo error_message_container">
+            <input
+            type="text"
+            id="taskName"
+            class="input task_name"
+            placeholder="Título"
+            />
+          
+        </div>
+
+
+        <div class="input_url error_message_container">
+          <input type="url" id="url" class="input url" placeholder="URL da imagem" />
+        </div>
+
+
+        <div class="input_descricao error_message_container">
+          <textarea
+            class="input text-area description"
+            id="description"
+            placeholder="Descrição"
+          ></textarea>
+        </div>
+
+        </form>
+
+        <div class="div_button">
+          <button id="createTaskButton" class="button" type="submit">Criar tarefa</button>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="titles">Backlog</h2>
+      </div>
+
+      <section class="tasks">
+
+      <div class="task_cards" id="taskCards">
+
+
+      </div>
+    </section>
+
+    </div>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
